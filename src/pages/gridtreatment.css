@@ -1,0 +1,112 @@
+
+main2{
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+  grid-template-rows: auto;
+  grid-template-areas: 
+          "slider slider slider"
+          "aside1 title aside2"
+          "aside1 grid-container aside2";
+}
+
+
+@media only screen and (max-width: 1350px){
+  main2{
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+            "slider slider slider"
+            "aside1 title aside2"
+            "aside1 grid-container aside2";
+  }
+  }
+
+
+@media only screen and (max-width: 800px){
+  main2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+            "slider"
+            "title"
+            "grid-container"
+            ;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px){
+  main2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "slider" 
+            "title"
+            "grid-container"
+            ;
+  }
+
+
+}
+
+.afspraak {
+  grid-area: afspraak;
+}
+
+.grid-container {
+  grid-area: grid-container;
+}
+
+.slider {
+  grid-area: slider;
+}
+
+.title {
+  grid-area: title;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.aside2 {
+  grid-area: aside2;
+}
+
+.aside3 {
+  grid-area: aside3;
+}
+
+.aside4 {
+  grid-area: aside4;
+}
+
+.contact-form{
+  grid-area: contact-form; 
+} 
+
+.left-column{
+  grid-area: left-column;
+}
+
+.right-column{
+  grid-area: right-column;
+}
+
+.main{
+  grid-area: main;
+}
+
+.main2{
+  grid-area: main2;
+}
+
+
+.treatment-card{
+  grid-area: treatment-card;
+}
+
