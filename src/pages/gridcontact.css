@@ -1,0 +1,111 @@
+
+main1{
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr 10rem;
+  grid-template-rows: auto;
+  grid-template-areas: 
+          "slider slider slider slider"
+          "aside1 contact-form right-column aside2"
+          "aside1 reclame1 reclame1 aside2";;
+}
+
+
+@media only screen and (max-width: 1350px){
+  main1{
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 5rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+            "slider slider slider slider"
+            "aside1 contact-form right-column aside2"
+            "aside1 reclame1 reclame1 aside2";
+            
+  }
+  }
+
+
+@media only screen and (max-width: 800px){
+  main1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+            "slider"
+            "contact-form"
+            "right-column"
+            "reclame1"
+            ;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px){
+  main1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "slider" 
+            "contact-form"
+            "right-column"
+            "reclame1"
+            ;
+  }
+
+
+}
+
+.afspraak {
+  grid-area: afspraak;
+} 
+
+.reclame1 {
+  grid-area: reclame1;
+} 
+
+.slider {
+  grid-area: slider;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.aside2 {
+  grid-area: aside2;
+}
+
+.aside3 {
+  grid-area: aside3;
+}
+
+.aside4 {
+  grid-area: aside4;
+}
+
+.contact-form{
+  grid-area: contact-form; 
+} 
+
+.left-column{
+  grid-area: left-column;
+}
+
+.right-column{
+  grid-area: right-column;
+}
+
+.main{
+  grid-area: main;
+}
+
+.main1{
+  grid-area: main1;
+}
+
+
+.contact-form{
+  grid-area: contact-form;
+}
+

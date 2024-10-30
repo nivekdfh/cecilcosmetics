@@ -1,0 +1,96 @@
+
+.main{
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr 1fr 10rem;
+  grid-template-rows: auto;
+  grid-template-areas: 
+          "slider slider slider slider slider"
+          "aside1 booking-container booking-container booking-container aside2"
+          "aside1 reclame1 reclame1 reclame1 aside2";
+}
+
+
+@media only screen and (max-width: 1350px){
+  .main{
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 1fr 5rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+            "slider slider slider slider slider"
+            "aside1 booking-container booking-container booking-container aside2"
+            "aside1 reclame1 reclame1 reclame1 aside2";
+
+  }
+  }
+
+
+@media only screen and (max-width: 800px){
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+            "slider"
+            "booking-container"
+            "reclame1"
+            ;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px){
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "slider" 
+            "booking-container"
+            "reclame1"
+            ;
+  }
+
+
+}
+
+.afspraak {
+  grid-area: afspraak;
+} 
+
+.reclame1 {
+  grid-area: reclame1;
+} 
+
+.booking-container {
+  grid-area: booking-container;
+} 
+
+.slider {
+  grid-area: slider;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.aside2 {
+  grid-area: aside2;
+}
+
+
+.left-column{
+  grid-area: left-column;
+}
+
+.right-kolom{
+  grid-area: right-kolom;
+}
+
+.main{
+  grid-area: main;
+}
+
+.main2{
+  grid-area: main2;
+}
