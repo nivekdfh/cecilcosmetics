@@ -21,7 +21,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "node server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +42,10 @@
       "last 1 safari version"
     ]
   },
+  "engines": {
+  "node": "18.x"
+},
+
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "keywords": [],
