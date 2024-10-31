@@ -3,26 +3,20 @@ FROM node:lts-alpine
 # Set environment to production
 ENV NODE_ENV=production
 
-# Set working directory
-WORKDIR /usr/src/app
+# Set the working directory to /app
+WORKDIR /app
 
-# Copy package.json and lock files
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+# Copy package.json and package-lock.json to install dependencies
+COPY package*.json ./
 
-# Install dependencies and move node_modules to root
-RUN npm install --production --silent && mv node_modules ../
+# Install dependencies
+RUN npm install --production --silent
 
-# Copy all remaining files
+# Copy all files to the working directory /app
 COPY . .
 
-# Expose the port your app will run on (change to the correct one)
+# Expose the correct port for your server
 EXPOSE 5005
 
-# Change ownership to node user
-RUN chown -R node /usr/src/app
-
-# Use the non-root user
-USER node
-
-# Run the app using server.js as the entry point
+# Start the application with server.js in /app
 CMD ["node", "server.js"]
