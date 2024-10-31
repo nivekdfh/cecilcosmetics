@@ -4,7 +4,7 @@ FROM node:lts-alpine
 ENV NODE_ENV=production
 
 # Set the working directory to /app
-WORKDIR /app
+WORKDIR /cecilc
 
 # Copy package.json and package-lock.json to install dependencies
 COPY package*.json ./
