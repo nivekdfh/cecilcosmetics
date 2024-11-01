@@ -23,6 +23,7 @@
     "serve": "vite preview",
     "deploy": "gh-pages -d dist",
     "start": "node server.js"
+    
   },
   "eslintConfig": {
     "extends": [
